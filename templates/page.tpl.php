@@ -1,3 +1,6 @@
+<link type="text/css" href="../css/style.css" rel="stylesheet" />
+
+
 <div id="header">
 
     <div id="header-inside">
