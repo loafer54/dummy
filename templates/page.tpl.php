@@ -12,7 +12,7 @@
         </div>
 
         <div id="header-inside-right">
-            header-inside-right   
+            <?php print render($page['search_area']); ?>   
         </div>
 
     </div>
