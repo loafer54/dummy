@@ -6,9 +6,7 @@
     <div id="header-inside">
 
         <div id="header-inside-left">     
-            <?php if ($logo): ?>
-            <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-            <?php endif; ?>
+            header-inside-left
         </div>
 
         <div id="header-inside-right">
