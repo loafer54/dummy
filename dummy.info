@@ -1,14 +1,20 @@
+; ----------------------------------------
 ; Metadata
+; ----------------------------------------
 name = Dummy
 description = A Dummy Theme for Drupal 7
 version = VERSION
 core = 7.x
 
+; ----------------------------------------
 ; Stylesheets
+; ----------------------------------------
 stylesheets[all][] = style.css
 stylesheets[all][] = color/colors.css
 
+; ----------------------------------------
 ; Regions
+; ----------------------------------------
 regions[search_area] = Search area
 regions[highlighted] = Highlighted
 regions[content] = Content
@@ -23,7 +29,9 @@ regions[help] = Help
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 
+; ----------------------------------------
 ; Settings
+; ----------------------------------------
 settings[breadcrumb_display]= 1
 settings[slideshow_display]= 1
 settings[slideshow_effect]='scrollHorz'
