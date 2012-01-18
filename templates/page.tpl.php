@@ -1,86 +1,12 @@
-<link type="text/css" href="../css/style.css" rel="stylesheet" />
 
 
-<div id="header">
+<?php include("page/header.php"); ?>
 
-    <div id="header-inside">
+<?php include("page/banner.php"); ?>
 
-        <div id="header-inside-left">     
-            <?php if ($logo): ?>
-            <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-            <?php endif; ?>
-        </div>
+<?php include("page/content.php"); ?>
 
-        <div id="header-inside-right">
-            <?php print render($page['search_area']); ?>   
-        </div>
-
-    </div>
-
-</div>
+<?php include("page/footer.php"); ?>
 
 
-<div id="header-menu">
-
-    <div id="header-menu-inside">
-        header-menu-inside
-    </div>
-
-</div>
-
-<div id="banner">
-    banner
-</div>
-
-<div id="content">
-
-    <div id="content-inside" class="inside">
-
-        <div id="main">
-            main
-        </div>
-
-        <div id="sidebar">
-            sidebar
-        </div>
-
-    </div>
-
-</div>
-
-<div id="footer">
-
-    <div id="footer-inside">
-
-        <div class="footer-area first">
-            footer-area first
-        </div>
-
-        <div class="footer-area second">
-            footer-area second
-        </div>
-
-        <div class="footer-area third">
-            footer-area third
-        </div>
-
-    </div>
-
-</div>
-
-<div id="footer-bottom">
-
-    <div id="footer-bottom-inside">
-
-        <div id="footer-bottom-left">
-            footer-bottom-left
-        </div>
-
-        <div id="footer-bottom-right">
-            footer-bottom-right
-        </div>
-
-    </div>
-
-</div>
 
