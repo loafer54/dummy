@@ -1,4 +1,7 @@
-#banner  { 
+#banner  {
+    clear:both;
+    overflow: hidden;
+    
     border-bottom:1px solid #fcfcfc; 
     @include background_image(#efeeee,#dadada);
 }

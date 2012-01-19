@@ -1,0 +1,49 @@
+#content { 
+    clear:both; 
+    overflow:hidden;
+    
+    @include background_image(#e8e8e8,#efefef);
+    
+}
+
+#content-inside { 
+    width: 960px; 
+    margin: 0 auto; 
+    padding:30px 0 60px; 
+    overflow:hidden; 
+    display:block; 
+} 
+
+#main { 
+    float:left; 
+    width: 620px; 
+    padding:0 60px 0 0; 
+    margin:0; 
+}
+
+#sidebar { 
+    float:left; 
+    width: 280px; 
+    padding:0; 
+} 
+
+.no-sidebars #main { 
+    width:960px; 
+    padding:0; 
+    margin:0; 
+}
+
+.no-sidebars #sidebar { 
+    display:none; 
+}
+
+.meta-data { 
+    font-size:75%; 
+    text-transform:uppercase; 
+    color:#545454; 
+    margin:5px 0 20px 0; 
+    display:block; 
+    overflow:hidden; 
+    clear:both; 
+}
+
