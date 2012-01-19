@@ -1,0 +1,115 @@
+
+#header-menu { 
+    clear:both;
+    
+    background: #222222; 
+    border-top:1px solid #353535; 
+    border-bottom:1px solid #353535; 
+}
+
+#header-menu-inside { 
+    width: 960px; 
+    margin: 0 auto; 
+    height:45px; 
+    line-height:46px;
+} 
+
+/* 
+* Main-menu 
+*/
+
+/* 1st Level */
+#header-menu ul.menu  { 
+    display:block; 
+    padding:0; 
+    margin:0; 
+    position:relative; 
+    z-index:100; 
+}
+
+#header-menu ul.menu li { 
+    display:inline-block; 
+    float:left; 
+    vertical-align: middle; 
+    padding:0; 
+    margin:0; 
+}
+
+#header-menu ul.menu li a { 
+    outline:none; 
+    text-decoration: none; 
+    margin:0 35px 0 0; 
+    color:#ffffff; 
+    font-size:14px; 
+    font-weight:normal; 
+    text-align:center; 
+    text-transform:uppercase; 
+    font-family: Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; display:block; 
+}
+
+#header-menu ul.menu li a:hover, #header-menu ul.menu li a.active { 
+    color:#1487d4; 
+}
+
+#header-menu ul.menu li a:after { 
+    content: none; 
+}
+
+#header-menu ul.menu li.expanded { 
+    position: relative; 
+}
+
+#header-menu ul.menu li.expanded a { 
+    background:transparent url('images/main-menu-expanded.png') no-repeat center right; 
+    padding:0 15px 0 0; 
+}
+
+/* 2nd Level */
+#header-menu ul.menu li.expanded ul.menu { 
+    width: 230px; 
+    z-index:100; 
+    padding:0; 
+    background: #222222; 
+    display: none; 
+    position: absolute; 
+}
+
+#header-menu ul.menu li.expanded:hover, #header-menu ul.menu li.expanded:hover > ul.menu { 
+    display:block; 
+}
+
+#header-menu ul.menu li.expanded ul.menu li a { 
+    padding:10px; 
+    margin:0; 
+    display:block; 
+    width:210px; 
+    text-align:left; 
+    line-height:130%; 
+    background:none; 
+    font-size:12px; 
+    border-bottom:1px solid #353535; 
+}
+
+#header-menu ul.menu li.expanded ul.menu li.expanded { 
+    background:transparent url('images/main-menu-arrow.png') no-repeat center right; 
+}
+
+#header-menu ul.menu li ul.menu li a:hover {  
+    background:#1b1b1b; 
+    color:#1487d4; 
+}
+
+#header-menu ul.menu li.expanded ul.menu li.expanded a:hover { 
+    background:#1b1b1b url('images/main-menu-arrow.png') no-repeat center right; 
+}
+
+#header-menu ul.menu li.expanded ul.menu li.leaf a:hover { 
+    background:#1b1b1b; 
+}
+
+/* 3rd, 4th, 5th, (...) level  */
+#header-menu ul.menu li.expanded ul ul { 
+    display: none; 
+    left: 230px; top:0; 
+    padding:0; 
+}

@@ -19,22 +19,12 @@
                 </div>
             <?php endif; ?>
 
-
         </div>
 
         <div id="header-inside-right">
             <?php print render($page['search_area']); ?> 
         </div>
 
-    </div>
-
-</div>
-
-
-<div id="header-menu">
-
-    <div id="header-menu-inside">
-        header-menu-inside
     </div>
 
 </div>
