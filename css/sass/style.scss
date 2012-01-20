@@ -1,20 +1,15 @@
 @mixin background_image($color1, $color2) { 
     background: $color1;
-    /* IE10 */ 
-    background-image: -ms-linear-gradient(top, $color1 0%, $color2 100%);
-    /* Mozilla Firefox */ 
-    background-image: -moz-linear-gradient(top, $color1 0%, $color2 100%);
-    /* Opera */ 
-    background-image: -o-linear-gradient(top, $color1 0%, $color2 100%);
-    /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $color1), color-stop(1, $color2));
-    /* Webkit (Chrome 11+) */ 
-    background-image: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
-    /* Proposed W3C Markup */ 
-    background-image: linear-gradient(top, $color1 0%, $color2 100%);
-    /* IE6-9 */ 
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f2f2f', endColorstr='#1b1a1a');
+    background-image: -ms-linear-gradient(top, $color1 0%, $color2 100%);       /* IE10 */
+    background-image: -moz-linear-gradient(top, $color1 0%, $color2 100%);      /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(top, $color1 0%, $color2 100%);        /* Opera */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $color1), color-stop(1, $color2));/* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-linear-gradient(top, $color1 0%, $color2 100%);   /* Webkit (Chrome 11+) */ 
+    background-image: linear-gradient(top, $color1 0%, $color2 100%);           /* Proposed W3C Markup */ 
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f2f2f', endColorstr='#1b1a1a');/* IE6-9 */ 
 }
+
+@import "basic";
 
 @import "header";
 @import "header-menu";
@@ -22,19 +17,5 @@
 @import "content";
 @import "footer";
 
-
-body { 
-    font: 0.8em/165% "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; 
-    margin:0; 
-    padding:0; 
-    color: #7a7a7a; 
-    outline:0 none; 
-    vertical-align:baseline; 
-    background:#1a1a1a;
-}
-
-.node.node-teaser { 
-    margin-bottom:60px; 
-}
-
-
+@import "blocks/block-search";
+@import "blocks/block-node-recent";
