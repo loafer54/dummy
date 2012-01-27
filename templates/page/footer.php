@@ -3,33 +3,19 @@
     <div id="footer-inside">
 
         <div class="footer-area first">
-            footer-area first
+            <?php print render($page['footer_first']); ?>
         </div>
 
         <div class="footer-area second">
-            footer-area second
+            <?php print render($page['footer_second']); ?>
         </div>
 
         <div class="footer-area third">
-            footer-area third
+            <?php print render($page['footer_third']); ?>
         </div>
 
     </div>
 
 </div>
 
-<div id="footer-bottom">
 
-    <div id="footer-bottom-inside">
-
-        <div id="footer-bottom-left">
-            footer-bottom-left
-        </div>
-
-        <div id="footer-bottom-right">
-            footer-bottom-right
-        </div>
-
-    </div>
-
-</div>

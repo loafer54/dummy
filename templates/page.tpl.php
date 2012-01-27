@@ -10,5 +10,7 @@
 
 <?php include("page/footer.php"); ?>
 
+<?php include("page/footer-bottom.php"); ?>
+
 
 
