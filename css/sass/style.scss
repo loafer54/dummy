@@ -9,6 +9,14 @@
     filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f2f2f', endColorstr='#1b1a1a');/* IE6-9 */ 
 }
 
+@mixin radius($radius){
+    -webkit-border-radius: $radius; 
+    -moz-border-radius: $radius; 
+    border-radius: $radius;
+}
+
+
+
 @import "basic";
 
 @import "header";
@@ -20,5 +28,8 @@
 
 @import "block/block-search";
 @import "block/block-node-recent";
+
+@import "node/node-teaser";
+@import "node/node-blog";
 
 @import "misc/comments";

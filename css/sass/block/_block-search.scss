@@ -37,8 +37,12 @@
     background:none; 
     border:none; 
     outline:none; 
-    padding:6px 10px 0 10px; 
+    padding:6px 10px 0 10px;
+    margin:0;
+    -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; 
+    filter:none;
 }
+
 
 .region-sidebar-first #block-search-form { 
     -webkit-box-shadow: none;  
