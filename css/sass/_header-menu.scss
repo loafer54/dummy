@@ -2,9 +2,9 @@
 #header-menu { 
     clear:both;
     
-    background: #222222; 
-    border-top:1px solid #353535; 
-    border-bottom:1px solid #353535; 
+    background: $header-menu_background; 
+    border-top:1px solid $header-menu_border-top_color; 
+    border-bottom:1px solid $header-menu_border-bottom_color; 
 }
 
 #header-menu-inside { 
@@ -39,7 +39,7 @@
     outline:none; 
     text-decoration: none; 
     margin:0 35px 0 0; 
-    color:#ffffff; 
+    color: $header-menu_a; 
     font-size:14px; 
     font-weight:normal; 
     text-align:center; 
@@ -48,7 +48,7 @@
 }
 
 #header-menu ul.menu li a:hover, #header-menu ul.menu li a.active { 
-    color:#1487d4; 
+    color: $header-menu_a_hover; 
 }
 
 #header-menu ul.menu li a:after { 
@@ -69,7 +69,7 @@
     width: 230px; 
     z-index:100; 
     padding:0; 
-    background: #222222; 
+    background: $header-menu_background_expanded; 
     display: none; 
     position: absolute; 
 }
@@ -87,7 +87,7 @@
     line-height:130%; 
     background:none; 
     font-size:12px; 
-    border-bottom:1px solid #353535; 
+    border-bottom:1px solid $header-menu_border-bottom_color; 
 }
 
 #header-menu ul.menu li.expanded ul.menu li.expanded { 
@@ -96,7 +96,7 @@
 
 #header-menu ul.menu li ul.menu li a:hover {  
     background:#1b1b1b; 
-    color:#1487d4; 
+    color:$header-menu_a_hover; 
 }
 
 #header-menu ul.menu li.expanded ul.menu li.expanded a:hover { 

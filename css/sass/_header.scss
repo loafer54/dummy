@@ -1,7 +1,6 @@
 #header { 
     clear:both;
-    
-    @include background_image(#2f2f2f,#1b1a1a);
+    @include background_image($header_background1,$header_background2);
 }
 
 #header-inside { 

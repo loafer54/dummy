@@ -2,7 +2,7 @@
     clear:both; 
     overflow:hidden;
     
-    @include background_image(#e8e8e8,#efefef);
+    @include background_image($content_background1,$content_background2);
     
 }
 

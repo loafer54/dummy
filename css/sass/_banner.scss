@@ -2,6 +2,6 @@
     clear:both;
     overflow: hidden;
     
-    border-bottom:1px solid #fcfcfc; 
-    @include background_image(#efeeee,#dadada);
+    border-bottom:1px solid $banner_border_bottom; 
+    @include background_image($banner_border_background1,$banner_border_background2);
 }

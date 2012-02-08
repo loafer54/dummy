@@ -259,7 +259,7 @@ overflow:hidden;
   outline: none;
   text-decoration: none;
   margin: 0 35px 0 0;
-  color: #ffffff;
+  color: white;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
@@ -468,6 +468,9 @@ overflow:hidden;
 #footer-bottom-inside {
   width: 960px;
   margin: 0 auto; }
+
+#footer-bottom-inside a {
+  color: #bbbbbb; }
 
 #footer-bottom-left {
   float: left;
@@ -695,3 +698,28 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last {
 #comments ul.links li a:hover {
   background: #008ab8;
   text-decoration: none; }
+
+div.messages.status {
+  background: #52ac61;
+  border: 1px solid #46a055;
+  padding: 10px;
+  margin: 0 0 15px 0;
+  color: #ffffff; }
+
+div.messages.error {
+  background: #d30000;
+  border: 1px solid #b50000;
+  padding: 10px;
+  margin: 0 0 15px 0;
+  color: #ffffff; }
+
+div.messages.warning {
+  background: #dd6e0c;
+  border: 1px solid #d2ac7f;
+  padding: 10px;
+  margin: 0 0 15px 0;
+  color: #ffffff; }
+
+div.messages.status a, div.messages.error a, div.messages.warning a {
+  color: #ffffff;
+  text-decoration: underline; }

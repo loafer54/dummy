@@ -16,7 +16,7 @@
 }
 
 
-
+@import "settings";
 @import "basic";
 
 @import "header";
@@ -33,3 +33,4 @@
 @import "node/node-blog";
 
 @import "misc/comments";
+@import "misc/message";

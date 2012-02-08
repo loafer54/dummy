@@ -1,0 +1,28 @@
+div.messages.status { 
+    background:#52ac61; 
+    border:1px solid #46a055; 
+    padding:10px; 
+    margin:0 0 15px 0; 
+    color:#ffffff; 
+}
+
+div.messages.error { 
+    background:#d30000; 
+    border:1px solid #b50000; 
+    padding:10px; 
+    margin:0 0 15px 0; 
+    color:#ffffff; 
+}
+
+div.messages.warning { 
+    background:#dd6e0c; 
+    border:1px solid #d2ac7f; 
+    padding:10px; 
+    margin:0 0 15px 0; 
+    color:#ffffff; 
+}
+
+div.messages.status a, div.messages.error a, div.messages.warning a { 
+    color:#ffffff; 
+    text-decoration:underline; 
+}
