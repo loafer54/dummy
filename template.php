@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * This basic function allows you to customize the search-block-form
  * @param type $form
@@ -19,5 +21,40 @@ function dummy_form_alter(&$form, &$form_state, $form_id) {
         $form['search_block_form']['#attributes'] = array('onblur' => "if (this.value == '') {this.value = '{$form_default}';}", 'onfocus' => "if (this.value == '{$form_default}') {this.value = '';}");
     }
 }
+
+
+drupal_add_js(drupal_get_path('theme', 'dummy') . '/js/jquery.cycle.all.min.js');
+
+//drupal_add_js(drupal_get_path('theme', 'dummy') . '/js/jquery-1.6.1.min.js');
+drupal_add_js(drupal_get_path('theme', 'dummy') . '/js/jquery.easing.1.3.js');
+drupal_add_js(drupal_get_path('theme', 'dummy') . '/js/jquery.gridnav.js');
+drupal_add_js(drupal_get_path('theme', 'dummy') . '/js/jquery.mousewheel.js');
+
+//Initialize slideshow using theme settings
+$effect=theme_get_setting('slideshow_effect','dummy');
+$effect_time=theme_get_setting('slideshow_effect_time','dummy')*1000;
+
+drupal_add_js('jQuery(document).ready(function($) {  
+
+$("#slideshow").cycle({
+	fx:    "'.$effect.'",
+	speed:  "slow",
+	timeout: "'.$effect_time.'",
+	pager:  "#slider-navigation",
+	pagerAnchorBuilder: function(idx, slide) {
+		return "#slider-navigation li:eq(" + (idx) + ") a";
+	},
+	after: onAfter
+});
+
+function onAfter(curr, next, opts, fwd){
+	var $ht = $(this).height();
+	$(this).parent().animate({height: $ht});
+}
+
+});',
+array('type' => 'inline', 'scope' => 'header', 'weight' => 5)
+);
+
 
 ?>
